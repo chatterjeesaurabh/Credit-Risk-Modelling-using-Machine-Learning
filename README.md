@@ -21,7 +21,7 @@ This project aims to design a machine learning model to assess and predict *cred
 1. **CIBIL Dataset:** [case_study2.xlsx](https://github.com/chatterjeesaurabh/Credit-Risk-Modelling-using-Machine-Learning/blob/main/case_study2.xlsx) : Credit Information Bureau (India) Limited (CIBIL) dataset of 51,336 customers with CIBIL Credit Score and other loan payment history. 
 - CIBIL Score Range: 300-900, above 750 is considered good. All banks send the customer's credit and payment history to CIBIL Bureau which determines the CIBIL Credit Score for the customer. 
 - Input features (60): Number of days past due (DPD), Time since last missed payment, Credit card utilization, etc.
-- Target variable: 'Approved_Flag': Customer Priority Levels - P1, P2, P3, P4. Customer with higher priority are more likely to get loan approval.
+- Target variable: `Approved_Flag`: Customer Priority Levels - P1, P2, P3, P4. Customer with higher priority are more likely to get loan approval.
 
 
 
@@ -36,18 +36,18 @@ Feature descriptions: [Features_Target_Description.xlsx](https://github.com/chat
 
 ### Feature Engineering
 
-1. Handling Missing Values:
+1. **Handling Missing Values:**
 - The 2nd dataset has significant number of NULL values (present as -99999) in many features. Instead of Imputation (mean/median/other), which ultimately is an assumption which may be far from True, following way is used to remove the NULL rows or the whole column.
 - If number of NULL rows:
   - < 10,000 : Remove the Rows
   - \> 10,000 : Remove the Column / feature
 
-2. Categorical Feature Selection:
+2. **Categorical Feature Selection:**
 - To determine which categorical features are associated with the Target variable (categorical).
 - Estimate **Chi-Sqaure** test : get **p-value** for each feature.
 - Keep only those features whose **p-value** < **alpha** (0.05).
 
-3. Numerical Feature Selection:
+3. **Numerical Feature Selection:**
 - To determine which numerical features are associated with the Target variable (categorical with > 2 features).
 - Test to be done : **ANOVA** (since input features are Numerical and Target varible 'Approved_Flag' is categorical with > 2 categories).
 - But before performing ANOVA, **Multicollinearity** between the feature variables needs to be determined using: **VIF (Variance Inflation Factor)**.
@@ -83,4 +83,8 @@ Customer risk ranking categories: P1 (best) to P4 (worse).
 - Update data features, labels and model based on the feedback received from the end business user.
 
 
+## Contributions
+[Saurabh Chatterjee](https://github.com/chatterjeesaurabh) </br>
+MTech, Signal Processing and Machine Learning </br>
+Indian Institute of Technology (IIT) Kharagpur
 
