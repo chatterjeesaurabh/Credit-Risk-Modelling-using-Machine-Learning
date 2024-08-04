@@ -37,7 +37,7 @@ Feature descriptions: [Features_Target_Description.xlsx](https://github.com/chat
 ### Feature Engineering
 
 1. **Handling Missing Values:**
-- The 2nd dataset has significant number of NULL values (present as -99999) in many features. Instead of Imputation (mean/median/other), which ultimately is an assumption which may be far from True, following way is used to remove the NULL rows or the whole column.
+- The 2nd dataset has significant number of NULL values (present as -99999) in many features. Instead of Imputation (mean/median/other), which ultimately is an assumption which may be far from true, following way is used to remove the NULL rows or the whole column.
 - If number of NULL rows:
   - < 10,000 : Remove the Rows
   - \> 10,000 : Remove the Column / feature
@@ -49,13 +49,13 @@ Feature descriptions: [Features_Target_Description.xlsx](https://github.com/chat
 
 3. **Numerical Feature Selection:**
 - To determine which numerical features are associated with the Target variable (categorical with > 2 features).
-- Test to be done : **ANOVA** (since input features are Numerical and Target varible 'Approved_Flag' is categorical with > 2 categories).
+- Test to be done : **ANOVA** (since input features are Numerical and Target varible `Approved_Flag` is categorical with > 2 categories).
 - But before performing ANOVA, **Multicollinearity** between the feature variables needs to be determined using: **VIF (Variance Inflation Factor)**.
 - Keep only those features which passes the VIF test and then **p-value** < **alpha** (0.05) in the ANOVA test.
 
 **VIF** (*Variance Inflation Factor*):
 - Used to identify Multicollinearity among independent features.
-- VIF<sub>i</sub> = 1 / (1- R<sub>i</sub><sup>2</sup>), where R<sub>i</sub><sup>2</sup> is the *coefficient of determination**.
+- VIF<sub>i</sub> = 1 / (1- R<sub>i</sub><sup>2</sup>), where R<sub>i</sub><sup>2</sup> is the *coefficient of determination*.
 - if VIF<sub>i</sub> > 6 : Highly Multicollinear with other features : remove that feature variable.
 
 **ANOVA** (*Analysis of Variance*): It is a statistical technique used to determine whether there are significant differences between the means of three or more groups by analyzing the variation within and between the groups. 
