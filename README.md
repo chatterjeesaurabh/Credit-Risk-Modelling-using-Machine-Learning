@@ -69,7 +69,7 @@ Feature descriptions: [Features_Target_Description.xlsx](https://github.com/chat
 
 ### Model Development
 
-- Random Forest and XGBoost ensemble models were used to predict customer credit risk ranking with four categories: P1, P2, P3 and P4.
+- **Random Forest** and **XGBoost** ensemble models were used to predict customer credit risk ranking with four categories: P1, P2, P3 and P4.
 - Evaluation Metrics: Accuracy, Precision, Recall, F1 Score.
 - Hyperparameter tuning performed using GridSearchCV. Obtained accuracy of 81%.
 
