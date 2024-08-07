@@ -31,6 +31,10 @@ This project aims to design a machine learning model to assess and predict *cred
 Total features = 60 + 25 = 85 features \
 Feature descriptions: [Features_Target_Description.xlsx](https://github.com/chatterjeesaurabh/Credit-Risk-Modelling-using-Machine-Learning/blob/main/Features_Target_Description.xlsx)
 
+<div align="center">
+  <img src="images/Credit_Score_vs_Priority_Levels.png" width="600" />
+</div>
+
 
 ## Method
 
