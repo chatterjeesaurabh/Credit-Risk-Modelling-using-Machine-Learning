@@ -18,7 +18,7 @@ This project aims to design a machine learning model to assess and predict *cred
 
 ## Datasets
 
-1. **CIBIL Dataset:** [case_study2.xlsx](https://github.com/chatterjeesaurabh/Credit-Risk-Modelling-using-Machine-Learning/blob/main/case_study2.xlsx) : Credit Information Bureau (India) Limited (CIBIL) dataset of 51,336 customers with CIBIL Credit Score and other loan payment history. 
+1. **CIBIL Dataset:** [case_study2.xlsx](https://github.com/chatterjeesaurabh/Credit-Risk-Modelling-using-Machine-Learning/blob/main/data/case_study2.xlsx) : Credit Information Bureau (India) Limited (CIBIL) dataset of 51,336 customers with CIBIL Credit Score and other loan payment history. 
 - CIBIL Score Range: 300-900, above 750 is considered good. All banks send the customer's credit and payment history to CIBIL Bureau which determines the CIBIL Credit Score for the customer. 
 - Input features (60): Number of days past due (DPD), Time since last missed payment, Credit card utilization, etc.
 - Target variable: `Approved_Flag`: Customer Priority Levels - P1, P2, P3, P4. Customer with higher priority are more likely to get loan approval.
@@ -26,10 +26,10 @@ This project aims to design a machine learning model to assess and predict *cred
 
 
 
-2. **Bank Product Dataset:** [case_study1.xlsx](https://github.com/chatterjeesaurabh/Credit-Risk-Modelling-using-Machine-Learning/blob/main/case_study1.xlsx) : Bank products (loan, credit card, etc) hold by the customer. Consists of 25 features.
+2. **Bank Product Dataset:** [case_study1.xlsx](https://github.com/chatterjeesaurabh/Credit-Risk-Modelling-using-Machine-Learning/blob/main/data/case_study1.xlsx) : Bank products (loan, credit card, etc) hold by the customer. Consists of 25 features.
 
 Total features = 60 + 25 = 85 features \
-Feature descriptions: [Features_Target_Description.xlsx](https://github.com/chatterjeesaurabh/Credit-Risk-Modelling-using-Machine-Learning/blob/main/Features_Target_Description.xlsx)
+Feature descriptions: [Features_Target_Description.xlsx](https://github.com/chatterjeesaurabh/Credit-Risk-Modelling-using-Machine-Learning/blob/main/data/Features_Target_Description.xlsx)
 
 <div align="center">
   <img src="images/Credit_Score_vs_Priority_Levels.png" width="600" />
